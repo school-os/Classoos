@@ -1,12 +1,14 @@
 {
-  "name": "electron-quick-start",
+  "name": "classoos",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A Linux Application for Classoos",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+	"dist": "electron-builder --linux deb"
+
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/school-os/classoos",
   "keywords": [
     "Electron",
     "quick",
@@ -14,13 +16,14 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "Arnon Hacohen <arnonhacohen123@gmail.com>",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^20.1.0",
     "electron-builder": "^23.3.3"
   },
-  "dependencies": {
-    "chromium-net-errors": "^13.0.0"
+  "build":{
+	  "icon": "icon.png",
+	  "appId": "io.github.school-os.classoos"
   }
 }
